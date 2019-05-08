@@ -1,6 +1,6 @@
 from math import ceil, log2
-from tournament.Player import Player
-from tournament.Match import Match
+from .Player import Player
+from .Match import Match
 
 
 
@@ -65,7 +65,7 @@ class Tournament:
 
 		while len(tempMM) > 0:
 			opponent = 1
-			while (tempMM[opponent] in tempMM[0].hasPlayed) and opponent < len(tempMM):
+			while (tempMM[opponent] in tempMM[0].hasPlayed) and opponent < len(tempMM)-1:
 				opponent += 1
 			if opponent == len(tempMM):
 				opponent = 1
