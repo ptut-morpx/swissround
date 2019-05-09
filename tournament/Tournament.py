@@ -76,6 +76,7 @@ class Tournament:
 
 	def playRound(self):
 		for match in self.round:
+			print("Match Started")
 			match.play()
 		self.roundsPlayed += 1
 
